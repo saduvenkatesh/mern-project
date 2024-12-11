@@ -1,0 +1,37 @@
+BACKEND :
+
+http  : hyper text transfer protocol
+https : hyper text transfer protocol secure
+ip    : internet protocol
+
+
+npm init -y => to install "package.json" file
+
+npm i express mongoose dotenv  
+
+=> express for js backend framework to install node modules and package-lock.json files.
+=> mongoose to intereact with the database mongodb
+=> dotenv is for to access the variables in .env file
+=> after installing this command, you can see their name with version in dependencies of package.json file
+
+> In package.json, in scripts, erase all and type : ' "dev":"node backend/server.js" '. this makes easy to run the backend using command called 'npm run dev'. (before it was the command 'node backend/server.js' used to run backend).
+
+npm i nodemon -D 
+
+=> -D for to make it appear in devdependencies of package.json file
+=> this command is to restart the server whenever you made changes
+=> to make it work, do a small change in dev of package.json file => ' "dev" : "nodemon backend/server,js" '
+
+
+
+FRONTEND :
+
+> cd frontend
+> npm create vite@latest .
+> select react => select java script
+> These commands will initialise frontend folder
+> npm i => gives us node modules in frontend folder
+
+> For ready made ui , use chakra ui follow below steps to use chakra ui :
+   => install dependencies : npm i @chakra-ui/react @emotion/react
+   => Add snippets : npx @chakra-ui/cli snippet add
