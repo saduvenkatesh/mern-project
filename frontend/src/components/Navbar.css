@@ -1,0 +1,66 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar-container {
+    max-width: 1140px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 600px) {
+    .navbar {
+      flex-direction: row;
+    }
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, cyan, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: inherit;
+    transition: transform 0.2s;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.1);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
