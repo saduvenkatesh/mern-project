@@ -20,7 +20,7 @@ const ProductCard = ({ product, deleteProduct, updateProduct }) => {
 			<img src={product.image} alt={product.name} className="product-image" />
 			<div className="card-content">
 				<h3 className="product-name">{product.name}</h3>
-				<p className="product-price">${product.price}</p>
+				<p className="product-price">{product.price} rs</p>
 				<div className="buttons">
 					<button className="edit-button" onClick={() => setIsModalOpen(true)}>Edit</button>
 					<button className="delete-button" onClick={() => handleDeleteProduct(product._id)}>Delete</button>
