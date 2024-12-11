@@ -1,11 +1,14 @@
-import { Button } from "src/components/ui/button"
+import { Button } from "@/components/ui/button"
 
 function App() {
+  
 
   return (
-    <>
-        <Button>Hello</Button>
-    </>
+    
+      <>
+      <Button>Click me</Button>
+      </>
+    
   )
 }
 
